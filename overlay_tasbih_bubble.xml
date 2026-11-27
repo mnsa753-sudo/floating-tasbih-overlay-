@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bubbleRoot"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_bubble_dark"
+    android:elevation="12dp"
+    android:gravity="center"
+    android:minWidth="156dp"
+    android:orientation="vertical"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="12dp">
+
+    <!-- Top Header Row: Drag Hint & Quick Menu Toggle -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/app_name"
+            android:textColor="@color/tasbih_text_secondary"
+            android:textSize="10sp" />
+
+        <ImageButton
+            android:id="@+id/btnToggleMenu"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/toggle_menu_desc"
+            android:src="@android:drawable/ic_menu_manage"
+            android:tint="@color/tasbih_text_secondary" />
+    </LinearLayout>
+
+    <!-- Primary Tap-to-Count & Drag Area -->
+    <LinearLayout
+        android:id="@+id/tapCountArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingVertical="6dp">
+
+        <TextView
+            android:id="@+id/tvOverlayDhikr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxWidth="220dp"
+            android:text="سُبْحَانَ اللَّهِ"
+            android:textColor="@color/tasbih_emerald_light"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="baseline"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvOverlayCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:text="0"
+                android:textColor="@color/tasbih_text_primary"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvOverlayTarget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:fontFamily="monospace"
+                android:text="/ 33"
+                android:textColor="@color/tasbih_text_secondary"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Expandable Quick Actions inside the Floating Bubble -->
+    <LinearLayout
+        android:id="@+id/panelQuickActions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btnOverlayNextDhikr"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/bg_control_chip"
+                android:gravity="center"
+                android:paddingHorizontal="8dp"
+                android:text="@string/short_dhikr"
+                android:textColor="@color/tasbih_text_primary"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/btnOverlayFontStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/bg_control_chip"
+                android:gravity="center"
+                android:paddingHorizontal="8dp"
+                android:text="@string/short_font"
+                android:textColor="@color/tasbih_text_primary"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/btnOverlayFontSize"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="@drawable/bg_control_chip"
+                android:gravity="center"
+                android:paddingHorizontal="8dp"
+                android:text="A+"
+                android:textColor="@color/tasbih_text_primary"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btnOverlayBubbleSize"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/bg_control_chip"
+                android:gravity="center"
+                android:paddingHorizontal="8dp"
+                android:text="@string/short_size"
+                android:textColor="@color/tasbih_text_primary"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/btnOverlayReset"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/bg_control_chip"
+                android:gravity="center"
+                android:paddingHorizontal="8dp"
+                android:text="@string/short_reset"
+                android:textColor="@color/tasbih_amber"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/btnOverlayOpenApp"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/bg_control_chip"
+                android:gravity="center"
+                android:paddingHorizontal="8dp"
+                android:text="@string/short_app"
+                android:textColor="@color/tasbih_emerald_light"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/btnOverlayClose"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="@drawable/bg_control_chip"
+                android:gravity="center"
+                android:paddingHorizontal="8dp"
+                android:text="✕"
+                android:textColor="@color/tasbih_danger"
+                android:textSize="11sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
