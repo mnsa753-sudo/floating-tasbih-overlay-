@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.FloatingTasbih" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/tasbih_emerald</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        <item name="android:windowBackground">@color/tasbih_bg_dark</item>
+        <item name="android:statusBarColor">@color/tasbih_bg_dark</item>
+        <item name="android:navigationBarColor">@color/tasbih_bg_dark</item>
+    </style>
+</resources>

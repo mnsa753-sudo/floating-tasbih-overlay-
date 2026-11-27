@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Floating Tasbih</string>
+    <string name="app_subtitle">مسبحة رقمية داكنة تعمل كنافذة عائمة فوق التطبيقات الأخرى</string>
+    <string name="overlay_permission_title">إذن الظهور فوق التطبيقات (SYSTEM_ALERT_WINDOW)</string>
+    <string name="permission_granted_label">الإذن مفعّل — يمكنك تشغيل الفقاعة العائمة الآن</string>
+    <string name="permission_missing_label">الإذن غير مفعّل — يلزم فتح إعدادات النظام لتفعيله</string>
+    <string name="grant_overlay_permission">فتح إعدادات الإذن</string>
+    <string name="start_floating_tasbih">تشغيل الفقاعة</string>
+    <string name="stop_floating_tasbih">إيقاف الفقاعة</string>
+    <string name="overlay_permission_granted">تم تفعيل إذن النافذة العائمة بنجاح</string>
+    <string name="overlay_permission_required_msg">يرجى تفعيل إذن الظهور فوق التطبيقات أولاً</string>
+    <string name="change_dhikr">تغيير الذكر</string>
+    <string name="reset_counter">تصفير العداد</string>
+    <string name="custom_dhikr_hint">أدخل ذكراً مخصصاً…</string>
+    <string name="apply_label">تطبيق</string>
+    <string name="appearance_section_title">الشفافية والحجم والخط</string>
+    <string name="opacity_label">شفافية الخلفية الداكنة</string>
+    <string name="bubble_size_label">حجم الفقاعة العائمة</string>
+    <string name="font_size_label">حجم خط الذكر</string>
+    <string name="vibration_label">الاهتزاز</string>
+    <string name="total_count_format">إجمالي التسبيحات: %1$d</string>
+    <string name="toggle_menu_desc">إظهار أو إخفاء أدوات الفقاعة</string>
+    <string name="notification_channel_name">خدمة المسبحة العائمة</string>
+    <string name="notification_channel_desc">إشعار مستمر لإبقاء الفقاعة العائمة نشطة فوق التطبيقات</string>
+    <string name="notification_active_text">المسبحة العائمة نشطة فوق التطبيقات</string>
+    <string name="stop_action">إيقاف</string>
+    <string name="short_dhikr">ذكر</string>
+    <string name="short_font">خط</string>
+    <string name="short_size">حجم</string>
+    <string name="short_reset">تصفير</string>
+    <string name="short_app">التطبيق</string>
+</resources>
